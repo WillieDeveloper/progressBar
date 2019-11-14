@@ -1,0 +1,36 @@
+.container {
+    width: 300px;
+    height: 30px;
+    border: 3px solid #ffffff;
+    border-radius: 8px;
+    background-color: #1abc9c;
+
+    margin: 50px auto;
+
+    box-shadow: 0 3px 10px #2c3e50;
+    overflow: hidden;
+}
+
+.bar {
+    width: 400px;
+    height: 30px;
+    background: repeating-linear-gradient(45deg,
+    rgba(255, 255, 255, .9) 0, rgba(255, 255, 255, .9) 5px,
+    transparent 5px, transparent 10px);
+    
+    animation: loading 3s linear infinite;
+}
+
+@keyframes loading {
+    from {
+        margin-left: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    to {
+        margin-left: -100px;
+    }
+}
